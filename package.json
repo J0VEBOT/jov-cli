@@ -1,0 +1,45 @@
+{
+  "name": "jovebot",
+  "version": "1.0.0",
+  "description": "J0VEBOT — CLI wrapper for all 15 Jupiter APIs. Swap, Lend, Perps, DCA, Price, Tokens, Portfolio and more from your terminal.",
+  "author": "J0VEBOT",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "jovebot": "./bin/jovebot.js"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node dist/cli.js",
+    "test": "node dist/cli.js doctor"
+  },
+  "keywords": [
+    "jupiter", "jup-ag", "solana", "swap", "defi", "perps",
+    "lend", "dca", "cli", "agent", "jovebot", "j0vebot"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/J0VEBOT/jov-cli"
+  },
+  "homepage": "https://j0ve.bot",
+  "bugs": {
+    "url": "https://github.com/J0VEBOT/jov-cli/issues"
+  }
+}
